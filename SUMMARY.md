@@ -14,7 +14,7 @@
   * [Plan de Formación](planes/formacion.md)
   * [Plan de Trazabilidad](planes/trazabilidad.md)
   * [Plan de Gestión de Residuos](planes/residuos.md)
-* [Comprobación y Revisión](control/README.md)
+* [Parte II - Comprobación y Revisión](control/README.md)
   * [Establecimiento de los Procedimientos de Comprobación](control/procedimientos.md)
   * [Establecimiento del Sistema de Documentación y Registro](control/registro.md)
   * [Revisión](control/revision.md)
