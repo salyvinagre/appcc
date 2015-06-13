@@ -1,0 +1,9 @@
+La higiene y seguridad de un alimento, son dos de los aspectos más
+importantes que complementan la calidad de un alimento. Como "higiene
+alimentaria" debemos entender el conjunto de medidas destinadas a
+garantizar la comestibilidad y la seguridad para el consumo de los
+alimentos. Abarca todos los aspectos de la producción, elaboración y
+distribución de los mismos, así como las posibles causas de
+toxicidad. El desarrollo de la "seguridad alimentaria" debe centrarse
+en descubrir lo que constituye un riesgo para la salud, con el fin de
+garantizar la ausencia de cualquier riesgo sanitario.
