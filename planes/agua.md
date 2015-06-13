@@ -1,25 +1,28 @@
 # Plan de Control del Agua
 
 ## Objetivos
-El objetivo de este plan es garantizar la salubridad del agua utilizada en la empresa, tanto en los procesos de elaboración, como en los de limpieza y desinfección , según los parámetros del Real Decreto 1 40/2003, de 7 de Febrero, por el que se
+El objetivo de este plan es garantizar la salubridad del agua utilizada en la empresa, tanto en los procesos de elaboración, como en los de limpieza y desinfección, según los parámetros del Real Decreto 1 40/2003, de 7 de Febrero, por el que se
 establecen los criterios sanitarios de la calidad del agua de consumo humano.
 
-• Programas:
+## Programas
 1. Programa de instalaciones y mantenimiento.
-La captación del agua utilizada en la empresa procede de la red m u nicipal
-de Salamanca, cuyo gestor es aqualia.
-En el archivo de documentación se encuentra e l certificado q ue expide el
-Ayu ntamiento identificando al gestor o facturas justificativas .
-En l a industria no existen depósitos i ntermed ios . L a d istribución d e la red de
-agua se detalla e n el plano adj unto indicando g rifos y cond ucciones de evacuación
-de aguas resid uales.
-Los materiales empleados en la instalación i nterior de agua potable son de
-pvc. Existen fregadero con accionamiento de pedal en e l obrador y lavamanos con
-sensor en la sala de ventas.
-Las instalaciones y equipos de agua q u e n ecesitan mantenimiento son g rifos
-y desagües. El m a nten i miento de estas instalaciones se realizará cada vez q u e se
-note alguna deficiencia, por parte de Ángel Vega Gómez, desmontando, limpiando,
-eliminando posibles restos de suciedad y com probando su buen funcionamiento . Las
-acciones realizadas se reflejará n en el Registro de incidencias ú nico.
-2. Programa de comprobación de la calidad del agua.
-Como se trata de agua de red m u nicipal no se p recisa ninguna comprobación.
+
+## Situación general
+La captación del agua utilizada en la empresa procede de la red municipal de Salamanca, cuyo gestor es Aqualia.
+En el archivo de documentación se encuentra el certificado que expide el Ayuntamiento identificando al gestor o facturas justificativas.
+
+La distribución de la red de agua se detalla en el plano adjunto indicando grifos y condicciones de evacuación
+de aguas residuales. Los materiales empleados en la instalación interior de agua potable son de pvc.
+
+### Depositos de agua
+En la industria no existen depósitos intermedios de agua fría siendo el termo de agua caliente el unico deposito de agua. La temperatura del agua caliente se mantiene siempre por encima de 65ºC para evitar la aparición de salmonela.
+
+### Fregaderos
+Existen un lavamanos para la zona de ventas con grifo electromecanico (sensor) con mezclador de agua fria/caliente. La zona de ventas tambien incorpora una manguera de PVC para la limpieza de suelos y vitrinas.
+ 
+En el obrador se encuentra una pila con grifo gerontológico (codo). 
+ 
+Las instalaciones y equipos de agua que necesitan mantenimiento son grifos y desagües. El mantenimiento de estas instalaciones se realizará cada vez que se note alguna deficiencia, por parte de {{ book.rs }}, desmontando, limpiando, eliminando posibles restos de suciedad y comprobando su buen funcionamiento.
+
+## Programa de comprobación de la calidad del agua.
+Como se trata de agua de red municipal no se precisa ninguna comprobación.
