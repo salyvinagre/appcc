@@ -5,7 +5,10 @@
 
 2. Garantizar el mantenimiento de locales y equipos.
 3. Garantizar que todos los equipos de medida se encuentran bajo control.
- 
+
+## Programas
+1. Programa de Mantenimiento de Locales, instalaciones y equipos.
+
 ## Situación General
 El establecimiento se encuentra dentro del casco urbano de Salamanca, en el Mercado Central y su entorno perimetral está constituido por otros puestos de dicho mercado, rodeado todo de aceras y calles asfaltadas.
 
