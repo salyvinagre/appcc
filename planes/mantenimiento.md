@@ -50,12 +50,34 @@ Los utiles y maquinaria son:
 5. 2 Básculas
 
 ## Programa de Mantenimiento de Locales, instalaciones y equipos.
-{{ book.name }} es el encargado de mantenimiento, cuya m isión es velar
-por el correcto fun cionamiento y estado de l as i nstalaciones, útiles y maquinaria .
-Como s e trata de u n establecimiento pequeño, vigila d ia riamente que todo se
-encuentre en buen estado y funcione correctamente. Cuando se presenta alguna
-avería o deficiencia, la subsana lo antes posible. A veces tiene q u e recurrir a
-diferentes profesionales y servicios técnicos.
-Las averías o deficiencias se anotan en el registro de incidencias ú n ico. 
+{{ book.rs }} es el encargado de mantenimiento, cuya misión es velar por el correcto funcionamiento y estado de las instalaciones, útiles y maquinaria.
 
+Como se trata de un establecimiento pequeño, vigila diariamente que todo se encuentre en buen estado y funcione correctamente. Cuando se presenta alguna avería o deficiencia, la subsana lo antes posible. 
 
+A veces tiene que recurrir a diferentes profesionales y servicios técnicos. Las averías o deficiencias se anotan en el registro de incidencias único. 
+
+### Programa de control de los equipos de medida
+Este programa será realizado por {{ book.rs }}
+
+#### Diariamente:
+* Control del estado de los evaporadores, vigilando la acumulación de hielo en los mismos.
+
+* Comprobación de que la temperatura de las vitrinas y la camara frigorífica se encuentra dentro del rango de trabajo.
+
+* Comprobación de que existe una correlación entre la temperatura mostrada por los termpostatos y la temperatura real de las vitrinas y camára frigorífica.
+
+* Comprobación de que los tiempos de funcionamiento de vitrinas y camaras son coherentes con la temperatura ambiental y la ocupación de las mismas.
+
+#### Trimestralmente:
+Verificación y calibración de la temperatura mostrada por los termostatos con un termómetro secundario.
+
+#### Rango de trabajo de los equipos de refrigeración
+
+##### Cámara frigorífica
+Temperatura de trabajo: 1-3ºC.
+
+##### Vitrina bacalao
+Temperatura de trabajo: 0-5ºC.
+
+##### Vitrina de encurtidos
+Temperatura de trabajo: 0-5ºC. En modo noche y cuando sólo estén presente aceitunas y encurtidos la temperatura de trabajo podrá elevarse no superando la temperatura de conservación (12ºC).
