@@ -1,3 +1,5 @@
+# Generalidades
+
 * **Razón Social**: {{ book.rs }}
 * **NIF**: {{ book.nif }}
 * **Nombre Comercial**: {{ book.nc }}
