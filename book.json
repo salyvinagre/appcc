@@ -1,0 +1,10 @@
+{
+    "plugins": [],
+    "pluginsConfig": {},
+    "structure": {
+        "readme": "intro/README.md"
+    },
+    "variables": {
+        "rs": "Sal y Vinagre"
+    }
+}
