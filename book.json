@@ -5,6 +5,11 @@
         "readme": "intro/README.md"
     },
     "variables": {
-        "rs": "Sal y Vinagre"
+        "rs": "Carlos Alberto Martín Pérez",
+        "nif" "09765745V",
+        "nc": "Sal y Vinagre",
+        "address": "Plaza del Mercado SN, planta Alta 64-65, 37001, Salamanca",
+        "raal": "",
+        "actividad": "Minorista Polivalente"
     }
 }
