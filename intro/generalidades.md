@@ -1,9 +1,9 @@
-*Razón Social*: {{ book.rs }}
-*NIF*: {{ book.nif }}
-*Nombre Comercial*: {{ book.nc }}
-*Dirección*: {{ book.address }}
-*RAAL*: {{ book.raal }}
-*Actividad Alimentaria*: {{ book.actividad }}
+* **Razón Social**: {{ book.rs }}
+* **NIF**: {{ book.nif }}
+* **Nombre Comercial**: {{ book.nc }}
+* **Dirección**: {{ book.address }}
+* **RAAL**: {{ book.raal }}
+* **Actividad Alimentaria**: {{ book.actividad }}
 
 ## Responsables de la aplicación del Sistema de Autocontrol
 {{book.rs }}, será la persona encargada de
