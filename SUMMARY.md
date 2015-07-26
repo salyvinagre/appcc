@@ -1,6 +1,6 @@
 # Summary
 
-* [Introducción](intro/README.md)
+* [Presentación](intro/README.md)
    * [Definición del sistema](intro/definicion.md)
    * [Legislación](intro/legislacion.md)
    * [Generalidades](intro/generalidades.md)
