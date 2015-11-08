@@ -30,4 +30,4 @@ Se tomarán medidas encaminadas a detectar la presencia de cualquier tipo de pla
 * Observación directa.
 
 ## Programa de Control y Eliminación de plagas
-La aplicación de medidas correctivas, tratamientos químicos, ante la presencia de plagas, se hará por tecnicos qualificados del Mercado Central.
+La aplicación de medidas correctivas, tratamientos químicos, ante la presencia de plagas, se realizará por la empresa *Serproan* bajo la dirección del Mercado Central.
