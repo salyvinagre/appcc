@@ -1,4 +1,4 @@
-# Generalidades
+## Generalidades
 
 * **Razón Social**: {{ book.rs }}
 * **NIF**: {{ book.nif }}
@@ -7,12 +7,12 @@
 * **RAAL**: {{ book.raal }}
 * **Actividad Alimentaria**: {{ book.actividad }}
 
-## Responsables de la aplicación del Sistema de Autocontrol
+### Responsables de la aplicación del Sistema de Autocontrol
 {{book.rs }}, será la persona encargada de
 la cumplimentación de todos los registros y documentos que se generen en el
 manual.
 
-## Ámbito de aplicación del sistema de autocontrol y seguimiento
+### Ámbito de aplicación del sistema de autocontrol y seguimiento
 El sistema de autocontrol va dirigido a l a recepción de materias primas y
 productos alimenticios, manipulación y elaboración de los mismos y servicio aun
 colectivo de consumidores finales.
