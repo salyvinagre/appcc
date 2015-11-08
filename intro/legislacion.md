@@ -1,7 +1,7 @@
-# Legislación
+## Legislación
 La realización del manual de **APPCC** para {{ book.rs }} se ha basado en la siguiente normativa legal.
 
-## Marco normativo Europeo
+### Marco normativo Europeo
 
 * [Reglamemto (CE) 178/2002, de 28 de enero](), por el que se establecen los principios y los requisitos generales de la legislación alimentaria, se crea la Autoridad Europea de Seguridad Alimentaria y se fijan procedimientos relativos a
 la seguridad alimentaria.
@@ -14,7 +14,7 @@ la seguridad alimentaria.
 
 * [El Reglamento (UE) 1169/2011]() establece los requisitos para la información alimentaria facilitada al consumidor. Este texto consolida y actualiza normativas anteriores en materia de etiquetado, concretamente el del Etiquetado general de los productos alimenticios, y el del etiquetado nutricional.
 
-## Marco normativo nacional
+### Marco normativo nacional
 
 * [Real Decreto 1808/1991, de 13 de diciembre](), por el que se regulan las menciones o marcas que permiten identificar el lote al que pertenece un producto alimenticio.
 
