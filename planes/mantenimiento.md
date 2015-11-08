@@ -37,14 +37,14 @@ Mismas características que la sala de ventas. Incorpora cajoneras para alojar i
 Compartidos y pertenecen al Mercado Central.
 
 ### Equipamiento comercial
-Todos los útiles de trabajo y maquinaria se en cuentran en buen estado de conservación , funcionan correctamente cunpliendo con los requisitos de
+Todos los útiles de trabajo y maquinaria se encuentran en buen estado de conservación , funcionan correctamente cumpliendo con los requisitos de
 higiene.
 
-Debido a las características de los productos a manipular, se ha tenido especial cuidado en la elección de los materiales de los útiles de trabajo y de los equipos, dandose prioridad al aceto y los composites en detrimento de materiales que, aunque validos, puedan verse comprometidos a largo plazo como el cobre o el aluminio.
+Debido a las características de los productos a manipular, se ha tenido especial cuidado en la elección de los materiales de los útiles de trabajo y de los equipos, dándose prioridad al acero y los composites en detrimento de materiales que, aunque validos, puedan verse comprometidos a largo plazo como el cobre o el aluminio.
 
 Los equipos de refrigeración tienen capacidad suficiente para almacenar las materias primas y los productos.
 
-Los utiles y maquinaria son:
+Los útiles y maquinaria son:
 
 1. Vitrinas expositoras con motores independientes.
 2. Guillotina
@@ -65,11 +65,11 @@ Este programa será realizado por {{ book.rs }}
 #### Diariamente:
 * Control del estado de los evaporadores, vigilando la acumulación de hielo en los mismos.
 
-* Comprobación de que la temperatura de las vitrinas y la camara frigorífica se encuentra dentro del rango de trabajo.
+* Comprobación de que la temperatura de las vitrinas y la cámara frigorífica se encuentra dentro del rango de trabajo.
 
-* Comprobación de que existe una correlación entre la temperatura mostrada por los termpostatos y la temperatura real de las vitrinas y camára frigorífica.
+* Comprobación de que existe una correlación entre la temperatura mostrada por los termostatos y la temperatura real de las vitrinas y cámara frigorífica.
 
-* Comprobación de que los tiempos de funcionamiento de vitrinas y camaras son coherentes con la temperatura ambiental y la ocupación de las mismas.
+* Comprobación de que los tiempos de funcionamiento de vitrinas y cámaras son coherentes con la temperatura ambiental y la ocupación de las mismas.
 
 #### Trimestralmente:
 Verificación y calibración de la temperatura mostrada por los termostatos con un termómetro secundario.
