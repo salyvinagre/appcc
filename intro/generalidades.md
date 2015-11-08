@@ -5,8 +5,9 @@
 * **NIF**: {{ book.nif }}
 * **Nombre Comercial**: {{ book.nc }}
 * **Dirección**: {{ book.address }}
-* **RAAL**:  [{{ book.raal }}](../assets/pdf/asf.pdf)
+* **RAAL**:  {{ book.raal }}
 * **Actividad Alimentaria**: {{ book.actividad }}
+
 
 ### Responsables de la aplicación del Sistema de Autocontrol
 {{book.rs }}, será la persona encargada de
