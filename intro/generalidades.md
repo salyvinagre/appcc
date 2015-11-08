@@ -8,6 +8,9 @@
 * **RAAL**:  {{ book.raal }}
 * **Actividad Alimentaria**: {{ book.actividad }}
 
+### Authorización Sanitaria
+![](../assets/png/asf-1.png)
+![](../assets/png/asf-2.png)
 
 ### Responsables de la aplicación del Sistema de Autocontrol
 {{book.rs }}, será la persona encargada de
