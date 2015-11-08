@@ -1,10 +1,11 @@
 ## Generalidades
 
+
 * **Razón Social**: {{ book.rs }}
 * **NIF**: {{ book.nif }}
 * **Nombre Comercial**: {{ book.nc }}
 * **Dirección**: {{ book.address }}
-* **RAAL**: {{ book.raal }}
+* **RAAL**:  [{{ book.raal }}](../assets/pdf/asf.pdf)
 * **Actividad Alimentaria**: {{ book.actividad }}
 
 ### Responsables de la aplicación del Sistema de Autocontrol
