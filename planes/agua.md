@@ -25,4 +25,4 @@ En el obrador se encuentra una pila con grifo gerontológico (codo).
 Las instalaciones y equipos de agua que necesitan mantenimiento son grifos y desagües. El mantenimiento de estas instalaciones se realizará cada vez que se note alguna deficiencia, por parte de {{ book.rs }}, desmontando, limpiando, eliminando posibles restos de suciedad y comprobando su buen funcionamiento.
 
 ## Programa de comprobación de la calidad del agua.
-Como se trata de agua de red municipal no se precisa ninguna comprobación.
+Dado que se trata de agua proveniente de la red municipalse se realizará una supervisión continua de las propiedades organolépticas de las misma, reflejando cualquier incidencia que pudiera detectarse en las mismas.
