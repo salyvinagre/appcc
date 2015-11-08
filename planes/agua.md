@@ -15,7 +15,7 @@ La distribución de la red de agua se detalla en el plano adjunto indicando grif
 de aguas residuales. Los materiales empleados en la instalación interior de agua potable son de pvc.
 
 ### Depositos de agua
-En la industria no existen depósitos intermedios de agua fría siendo el termo de agua caliente el unico deposito de agua. La temperatura del agua caliente se mantiene siempre por encima de 65ºC para evitar la aparición de salmonela.
+En la industria no existen depósitos intermedios de agua fría siendo el termo de agua caliente el único deposito de agua el cual está situado en el techo del establecimiento. La temperatura del agua caliente se mantiene siempre por encima de 65ºC para evitar la aparición de salmonela.
 
 ### Fregaderos
 Existen un lavamanos para la zona de ventas con grifo electromecanico (sensor) con mezclador de agua fria/caliente. La zona de ventas tambien incorpora una manguera de PVC para la limpieza de suelos y vitrinas.
