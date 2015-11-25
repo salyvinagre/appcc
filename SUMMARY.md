@@ -15,7 +15,6 @@
    * [Plan de Trazabilidad](planes/trazabilidad.md)
    * [Plan de Gestión de Residuos](planes/residuos.md)
 * [Parte II - Anexos](anexos/README.md)
-   * [Establecimiento de los Procedimientos de Comprobación](control/procedimientos.md)
-   * [Establecimiento del Sistema de Documentación y Registro](control/registro.md)
-   * [Revisión](control/revision.md)
+   * [Listado de Manipuladores](anexos/manipuladores.md)
+   * [Listado de Proveedores](anexos/proveedores.md)
 
