@@ -28,10 +28,13 @@ correctamente y aislados del resto, en un armario destinado a tal fin.
 
  
 ### Operativa de limpieza
-Las tareas de limpieza y desinfección se realizan al final de la jornada laboral, dejando todo en perfecto estado para el siguiente uso.
+Las tareas de limpieza y desinfección se realizan al final de la jornada laboral, dejando todo en perfecto estado para el siguiente uso. En caso de que el operativo de limpeza no pudiera llevarse a cabo se registrará en el registro de incidencias.
 
 #### Sala de ventas y obrador
-Inicialmente se procedera a humedecer las superficies y suelos con la manguera para proceder posteriormente a la limpieza y desinfección con métodos mecánicos y agua caliente dejando que el producto según su ficha técnica actúe el tiempo necesario para lograr el efecto deseado y en la concentración recomendada. Enjuague con abundante agua.
+Limpieza diaria. Inicialmente se procedera a humedecer las superficies y suelos con la manguera para proceder posteriormente a la limpieza y desinfección con métodos mecánicos y agua caliente dejando que el producto según su ficha técnica actúe el tiempo necesario para lograr el efecto deseado y en la concentración recomendada. Enjuague con abundante agua.
+
+#### Cámara frigorífica.
+Se procederá a su limpieza con la frecuencia necesaria, retrasándola en la medida de lo posible durante los meses de verano para evitar la perdida de la cadena de frío de los productos en ella almacenados.
 
 #### Equipos. útiles y maquinaria
 Limpieza por fricción y mecánicamente con detergentes autorizados y agua caliente. Aclarado con agua.
@@ -41,6 +44,4 @@ Limpieza por fricción y mecánicamente con detergentes autorizados y agua calie
 * Fairy.
 
 ## Programa de comprobación de la eficacia del programa de limpieza y desinfección
-Para comprobar que las tareas de limpieza y desinfección se han realizado correctamente, existe una supervisión subjetiva por parte de la persona encargada de la empresa, al final de cada jornada laboral, observando visualmente el estado de
-todas las instalaciones, útiles y maquinaria, después de realizar d ichas tareas. Si el resultado de la supervisión no es el esperado, se aplicarán las med idas correctivas
-oportunas, consistentes en volver a limpiar de forma adecuada lo que no esté bien.
+Para comprobar que las tareas de limpieza y desinfección se han realizado correctamente, existe una supervisión subjetiva por parte de la persona encargada de la empresa, al final de cada jornada laboral, observando visualmente el estado de todas las instalaciones, útiles y maquinaria, después de realizar d ichas tareas. Si el resultado de la supervisión no es el esperado, se aplicarán las medidas correctivas oportunas, consistentes en volver a limpiar de forma adecuada lo que no esté bien.
