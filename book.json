@@ -40,6 +40,9 @@
     // See https://github.com/GitbookIO/gitbook/issues/209
     "theme": "./localtheme",
 
+    // Path to README file
+    "readme.path": "intro/README.md"
+
     // Links in template (null: default, false: remove, string: new value)
     "links": {
         // Link to home in the top-left corner
@@ -83,9 +86,7 @@
             "bottom": 36
         }
     },
-    "structure": {
-        "readme": "intro/README.md"
-    },
+
     "variables": {
         "rs": "Carlos Alberto Martín Pérez",
         "nif": "09765745V",
