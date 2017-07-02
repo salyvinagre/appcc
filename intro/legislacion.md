@@ -37,3 +37,4 @@ la seguridad alimentaria.
 * [Real Decreto 191/2011, de 18 de febrero](http://www.boe.es/buscar/doc.php?id=BOE-A-2013-7749), sobre Registro general sanitario de empresas alimentarias y alimentos.
 
 * [Real Decreto 1338/2011, de 3 de octubre](), por que se establecen distintas medidas singulares de aplicación de las disposiciones comunitarias en materia de higiene de la producción y comercialización de los productos alimentarios.
+* [Real Decreto 126/2015, de 27 de febrero](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2015-2293), por el que se aprueba la norma general relativa a la información alimentaria de los alimentos que se presenten sin envasar para la venta al consumidor final y a las colectividades, de los envasados en los lugares de venta a petición del comprador, y de los envasados por los titulares del comercio al por menor.
