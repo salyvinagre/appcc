@@ -17,8 +17,6 @@
 * [Parte II - Anexos](anexos/README.md)
   * [Listado de Manipuladores](anexos/manipuladores.md)
   * [Listado de Proveedores](anexos/proveedores.md)
-  * Recetario
-  * Registro de Incidencias
-
-
-
+  * [Recetario](anexos/recetario.md)
+  * [Registro de Incidencias](anexos/incidencias.md)
+  
