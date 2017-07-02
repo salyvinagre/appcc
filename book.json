@@ -1,9 +1,10 @@
 {
+    "readme.path": "intro/README.md",
+ 
     "plugins": [],
     "pluginsConfig": {},
     
     "theme": "./localtheme",
-    "readme.path": "intro/README.md",
     "variables": {
         "rs": "Carlos Alberto Martín Pérez",
         "nif": "09765745V",
