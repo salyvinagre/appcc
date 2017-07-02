@@ -1,6 +1,4 @@
 {
-    "plugins": [],
-    "pluginsConfig": {},
     "structure": {
         "readme": "intro/README.md"
     },
