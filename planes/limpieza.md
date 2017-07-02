@@ -36,6 +36,9 @@ Inicialmente se procedera a humedecer las superficies y suelos con la manguera p
 #### Equipos. útiles y maquinaria
 Limpieza por fricción y mecánicamente con detergentes autorizados y agua caliente. Aclarado con agua.
 
+#### Productos de limpieza a utilizar
+* Lejia.
+* Fairy.
 
 ## Programa de comprobación de la eficacia del programa de limpieza y desinfección
 Para comprobar que las tareas de limpieza y desinfección se han realizado correctamente, existe una supervisión subjetiva por parte de la persona encargada de la empresa, al final de cada jornada laboral, observando visualmente el estado de
