@@ -84,4 +84,4 @@ Temperatura de trabajo: 0-2ºC.
 Temperatura de trabajo: 4-6ºC. En modo noche y cuando sólo estén presente aceitunas y encurtidos la temperatura de trabajo podrá elevarse no superando la temperatura de conservación (12ºC).
 
 #### Registro de Incidencias.
-Se acompañará en un anexo un control de incidencias que incorporará al menos la fecha, incidencia, y la medida correctora aplicada para su subsanación. En caso de que en el plazo de un mes no se haya dado singuna situación reseñable, se recogera este hecho en el registro.
+Se acompañará en un [anexo](./anexos/incidencias.md) un control de incidencias que incorporará al menos la fecha, incidencia, y la medida correctora aplicada para su subsanación. En caso de que en el plazo de un mes no se haya dado singuna situación reseñable, se recogera este hecho en el registro.
