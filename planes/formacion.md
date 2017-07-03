@@ -9,7 +9,7 @@ Garantizar que los manipuladores de alimentos adquieran unos conocimientos adecu
 1. Programa de buenas prácticas de manipulación.
 2. Curso de Alérgenos alimentarios.
 
-Será responsabilidad de los operadores el correcto conocimiento de los diferentes programas formativos recogidos en el anexo. 
+Será responsabilidad de los operadores el correcto conocimiento de los diferentes programas formativos recogidos en el anexo.
 
 ## Resumen de buenas prácticas de manipulación
 
