@@ -9,7 +9,7 @@ Garantizar que los manipuladores de alimentos adquieran unos conocimientos adecu
 1. Programa de buenas prácticas de manipulación.
 2. Curso de Alérgenos alimentarios.
 
-Será responsabilidad de los operadores el correcto conocimiento de los diferentes programas formativos recogidos en el anexo.
+Será responsabilidad de los operadores el correcto conocimiento de los diferentes programas formativos recogidos en el anexo. El plan de formación ha sido elaborado por el centro de formación_ Laborali_ , inscrito para impartir la formación para la obtención del Carnet de Manipulador de Alimentos según el R.D 109/2010 cuyos contenidos están adaptados al Reglamento y temario  CE nº 852/2004 del Parlamento Europeo y del Consejo del 29 de abril, relativo a la higiene de los Productos Alimenticios. Para garantizar que los operadores han adquirido los conocimientos, deberán superar la prueba online desarrollada por 'Laborali' para certificar a los operadores.
 
 ## Resumen de buenas prácticas de manipulación
 
