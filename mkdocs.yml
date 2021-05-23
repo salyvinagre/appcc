@@ -16,6 +16,11 @@ nav:
     - Plan de Formación: planes/formacion.md
     - Plan de Trazabilidad: planes/trazabilidad.md
     - Plan de Gestión de Residuos: planes/residuos.md
+  - Anexos:
+    - Listado de Manipuladores: anexos/manipuladores.md
+    - Listado de Proveedores: anexos/proveedores.md
+    - Recetario: anexos/recetario.md
+    - Registro de Incidencias: anexos/incidencias.md
   - Lista de Cambios: ChangeLog.md
 
 plugins:
