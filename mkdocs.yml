@@ -2,6 +2,12 @@ site_name: Sal y Vinagre APPCC
 
 nav:
   - Home: index.md
+  - Presentación:
+    - Introducción: intro/index.md
+    - Legislación: intro/legislacion.md
+    - Generalidades: intro/generalidades.md
+    - Descripción de la actividad de la empresa: intro/descripcion.md
+  - Lista de Cambios: ChangeLog.md
 
 plugins:
   - search
