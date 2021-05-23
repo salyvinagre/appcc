@@ -1,6 +1,7 @@
 # Plan de control de plagas
+___
 
-##Objetivos
+## Objetivos
 Evitar que las plagas sean origen de contaminación de alimentos.
 
 Debido al emplazamiento de la empresa dentro del Mercado Central, el control de plagas sera realizado por los servicios de mantenimiento del propio mercado o por terceras empresas contratadas por el mercado para tal efecto.
@@ -15,8 +16,8 @@ Se aplicarán las siguientes medidas encaminadas a impedir la entrada y desarrol
 
 ### Medidas pasivas
 * Higiene de las instalaciones.
-* Eliminar basura en contenedores con tapadera. 
-* Limpieza sistemática de maquinaria y equipos. 
+* Eliminar basura en contenedores con tapadera.
+* Limpieza sistemática de maquinaria y equipos.
 * Sellado de grietas y desconchones.
 * Control de materias primas y productos.
 

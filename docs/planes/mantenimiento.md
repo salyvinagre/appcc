@@ -1,8 +1,8 @@
 # Plan de Infraestructuras y Mantenimiento
+___
 
 ## Objetivos
 1. Demostrar que el emplazamiento es adecuado y que el diseño de las instalaciones y los equipos cumplen el principio de "marcha hacia delante" con la finalidad de evitar la contaminación cruzada.
-
 2. Garantizar el mantenimiento de locales y equipos.
 3. Garantizar que todos los equipos de medida se encuentran bajo control.
 
@@ -24,7 +24,7 @@ Los productos de limpieza y desinfección se encuentran almacenados correctament
 Existe un dispositivo de evacuación de residuos líquidos y sólidos que responde a las exigencias de higiene.
 
 ### Sala de ventas
-* Los suelos son de cerámica, impermeables, fáciles de limpiar y desinfectar eimputrescibles.
+* Los suelos son de cerámica, impermeables, fáciles de limpiar y desinfectar e imputrescibles.
 * Las paredes están forrados de paneles HPL de superficie no porosa e impermeable con tratamiento antibacteriano y aptas para el contacto con los alimentos (IANESCO).
 * Los techos son lisos y fáciles de limpiar, rematados con plaquetas.
 * La ventilación es natural.
@@ -53,14 +53,14 @@ Los útiles y maquinaria son:
 5. 2 Básculas
 
 ## Programa de Mantenimiento de Locales, instalaciones y equipos.
-{{ book.rs }} es el encargado de mantenimiento, cuya misión es velar por el correcto funcionamiento y estado de las instalaciones, útiles y maquinaria.
+{{ rs }} es el encargado de mantenimiento, cuya misión es velar por el correcto funcionamiento y estado de las instalaciones, útiles y maquinaria.
 
-Como se trata de un establecimiento pequeño, vigila diariamente que todo se encuentre en buen estado y funcione correctamente. Cuando se presenta alguna avería o deficiencia, la subsana lo antes posible. 
+Como se trata de un establecimiento pequeño, vigila diariamente que todo se encuentre en buen estado y funcione correctamente. Cuando se presenta alguna avería o deficiencia, la subsana lo antes posible.
 
-A veces tiene que recurrir a diferentes profesionales y servicios técnicos. Las averías o deficiencias se anotan en el registro de incidencias único. 
+A veces tiene que recurrir a diferentes profesionales y servicios técnicos. Las averías o deficiencias se anotan en el registro de incidencias único.
 
 ### Programa de control de los equipos de medida
-Este programa será realizado por {{ book.rs }}
+Este programa será realizado por {{ rs }}
 
 #### Diariamente:
 * Control diario del estado de los evaporadores, vigilando la acumulación de hielo en los mismos.
@@ -84,4 +84,4 @@ Temperatura de trabajo: 0-2ºC.
 Temperatura de trabajo: 4-6ºC. En modo noche y cuando sólo estén presente aceitunas y encurtidos la temperatura de trabajo podrá elevarse no superando la temperatura de conservación (12ºC).
 
 #### Registro de Incidencias.
-Se acompañará en un [anexo](./anexos/incidencias.md) un control de incidencias que incorporará al menos la fecha, incidencia, y la medida correctora aplicada para su subsanación. En caso de que en el plazo de un mes no se haya dado singuna situación reseñable, se recogera este hecho en el registro.
+Se acompañará en un [anexo](../anexos/incidencias.md) un control de incidencias que incorporará al menos la fecha, incidencia, y la medida correctora aplicada para su subsanación. En caso de que en el plazo de un mes no se haya dado ninguna situación reseñable, se recogerá este hecho en el registro.

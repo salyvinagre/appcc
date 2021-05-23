@@ -1,4 +1,5 @@
 # Plan de control de formación de manipuladores.
+---
 
 ## Objetivos
 
@@ -22,7 +23,7 @@ Para mejorar los niveles de seguridad alimentaria hay que tener en cuenta estas 
 3. Para una correcta limpieza e higiene, así como para la seguridad del propio manipulador, hay que eliminar todo objeto ornamental como anillos, pulseras, relojes, pendientes,... que en un determinado momento pueden llegar a caerse.
 4. Los útiles y maquinaria a utilizar tienen que estar correctamente limpios y desinfectados.
 5. El tabaco está prohibido en cualquier zona de trabajo, no solo por el riesgo de contaminación directa entre la boca, manos y cigarro, sino también por el riesgo de que la ceniza o alguna colilla se mezcle con el producto alimentario y llegue al consumidor.
-6. A lo largo de toda la jornada laboral, el manipulador tiene que cambiar y/o limpiar y desinfectar, cada vez que sea preciso, los cuchillos o utensilios que utiliza y lavarse las manos, especialmente cuando se manipulan distintos productos \(por ejemplo,bacalao y luego encurtidos\).
+6. A lo largo de toda la jornada laboral, el manipulador tiene que cambiar y/o limpiar y desinfectar, cada vez que sea preciso, los cuchillos o utensilios que utiliza y lavarse las manos, especialmente cuando se manipulan distintos productos \(por ejemplo, bacalao y luego encurtidos\).
 7. Todas las superficies y utensilios a utilizar tienen que ser de fácil limpieza e inalterables por la humedad, altas temperaturas o desinfectantes; tendrán que ser superficies lisas, sin grietas o recodos de difícil limpieza.
 8. Un punto de máximo riesgo es el lavabo. Cuando un manipulador tiene que utilizar el servicio, es necesario que se desprenda de la bata o delantal. Con posterioridad tendrá que lavarse correctamente manos, uñas y antebrazos, antes de incorporarse al trabajo.
 9. Otro punto de suciedad son los suelos. Ante la caída de cualquier utensilio, éste tendrá que ser higienizado antes de su utilización.
@@ -44,7 +45,7 @@ Sustancias o productos que causan alegias o intolerancias:
    * maltodextrinas a base de trigo;
    * jarabes de glucosa a base de cebada;
    * cereales utilizados para hacer destilados alcohólicos, incluido e! alcohol etílico de origen agrícola.
-2. **Crustáceos** y productos a base de crustáceos. 
+2. **Crustáceos** y productos a base de crustáceos.
 3. **Huevos** y productos a base de huevo.
 4. **Pescado** y productos a base de pescado, salvo:
    * gelatina de pescado utilizada como soporte de vitaminas o preparados de carotenoides;
@@ -52,7 +53,7 @@ Sustancias o productos que causan alegias o intolerancias:
 5. Cacahuetes y productos a base de cacahuetes.
 6. **Soja** y productos a base de soja, salvo:
    * aceite y grasa de semilla de soja totalmente refinados;
-   * tocoferoles naturales mezclados \(E306\), d-aifa tocoferol natural, acetato de d- aifa tocoferol natural y succinato de d-aifa tocoferol natural derivados de la soja; 
+   * tocoferoles naturales mezclados \(E306\), d-aifa tocoferol natural, acetato de d- aifa tocoferol natural y succinato de d-aifa tocoferol natural derivados de la soja;
    * fitosteroles y ésteres de fitosterol derivados de aceites vegetales de soja;
    * ésteres de fitostanol derivados de fitosteroles de aceite de semilla de soja.
 7. _Leche_ y sus derivados \(incluida la lactosa\), salvo:
@@ -72,11 +73,8 @@ Sustancias o productos que causan alegias o intolerancias:
    * Aceitunas rellenas de anchoa.
    * Pimentón siempre que no sea puro.
 2. Aceitunas:
-   * Existe la posibilidad de usar consevantes como el acido láctico Especial atención a los siguientes aditivos: E-270, E-32{5..9} 
+   * Existe la posibilidad de usar consevantes como el acido láctico Especial atención a los siguientes aditivos: E-270, E-32{5..9}
 3. Pescado:
    * Aceitunas rellenas de anchoa.
 4. Sulfitos:
    * Aceitunas en general. Especial atención al bacalao salao pues algunos fabricantes hacen uso de sulfitos con el mismo E-22{0..8}.
-
-
-
