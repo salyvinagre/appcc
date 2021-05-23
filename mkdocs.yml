@@ -1,1 +1,3 @@
-site_name: My Docs
+site_name: Sal y Vinagre APPCC
+nav:
+  - Home: index.md

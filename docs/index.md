@@ -1,17 +1,21 @@
-# Welcome to MkDocs
+# Sumario
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [Presentación](intro/README.md)
+  * [Definición del sistema](intro/definicion.md)
+  * [Legislación](intro/legislacion.md)
+  * [Generalidades](intro/generalidades.md)
+  * [Descripción de la actividad de la empresa](intro/descripcion.md)
+* [Parte I - Prerequisitos](planes/README.md)
+  * [Plan de Infraestructuras y Mantenimiento](planes/mantenimiento.md)
+  * [Plan de Control del Agua](planes/agua.md)
+  * [Plan de Limpieza y Desinfección](planes/limpieza.md)
+  * [Plan de Control de Plagas](planes/plagas.md)
+  * [Plan de Control de Proveedores](planes/proveedores.md)
+  * [Plan de Formación](planes/formacion.md)
+  * [Plan de Trazabilidad](planes/trazabilidad.md)
+  * [Plan de Gestión de Residuos](planes/residuos.md)
+* [Parte II - Anexos](anexos/README.md)
+  * [Listado de Manipuladores](anexos/manipuladores.md)
+  * [Listado de Proveedores](anexos/proveedores.md)
+  * [Recetario](anexos/recetario.md)
+  * [Registro de Incidencias](anexos/incidencias.md)
