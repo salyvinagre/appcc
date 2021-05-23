@@ -1,3 +1,16 @@
 site_name: Sal y Vinagre APPCC
+
 nav:
   - Home: index.md
+
+plugins:
+  - search
+  - markdownextradata
+
+extra:
+    rs: "Carlos Alberto Martín Pérez"
+    nif: "09765745V"
+    nc: "Sal y Vinagre"
+    address: "Plaza del Mercado SN, planta Alta 64-65, 37001, Salamanca"
+    raal: "201977/SA"
+    actividad: "Minorista Polivalente"
