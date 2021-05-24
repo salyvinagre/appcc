@@ -13,11 +13,18 @@ edit_uri: ""
 # Copyright:
 copyright: Copyright &copy; 2016-2021 Carlos Martín
 
-# Configuration
-theme:
-  name: mkdocs
-  language: es
+# Vars
+extra:
+    rs: "Carlos Alberto Martín Pérez"
+    nif: "09765745V"
+    nc: "Sal y Vinagre"
+    address: "Plaza del Mercado SN, planta Alta 64-65, 37001, Salamanca"
+    raal: "201977/SA"
+    actividad: "Minorista Polivalente"
+    horario: "Lunes a Sabado de 9:00 a 14:00"
+    aforo: "3"
 
+# TOC
 nav:
   - Home: index.md
   - Presentación:
@@ -29,6 +36,7 @@ nav:
     - Plan de Infraestructuras y Mantenimiento: planes/mantenimiento.md
     - Plan de Control del Agua: planes/agua.md
     - Plan de Limpieza y Desinfección: planes/limpieza.md
+    - Plan de Medidas de prevencion frente al COVID-19: planes/covid19.md
     - Plan de Control de Plagas: planes/plagas.md
     - Plan de Control de Proveedores: planes/proveedores.md
     - Plan de Formación: planes/formacion.md
@@ -39,6 +47,8 @@ nav:
     - Listado de Proveedores: anexos/proveedores.md
     - Recetario: anexos/recetario.md
     - Registro de Incidencias: anexos/incidencias.md
+    - Medidas de Prevención e Higiene: anexos/covid.md
+    - Listado de Productos de Limpieza y Desinfección: anexos/productos.md
   - Lista de Cambios: ChangeLog.md
 
 plugins:
@@ -53,10 +63,17 @@ plugins:
       #media_type: print
       #enabled_if_env: ENABLE_PDF_EXPORT
 
-extra:
-    rs: "Carlos Alberto Martín Pérez"
-    nif: "09765745V"
-    nc: "Sal y Vinagre"
-    address: "Plaza del Mercado SN, planta Alta 64-65, 37001, Salamanca"
-    raal: "201977/SA"
-    actividad: "Minorista Polivalente"
+
+# Configuration
+theme:
+  name: mkdocs
+  language: es
+
+markdown_extensions:
+  - footnotes
+  - toc:
+      permalink: 
+
+extra_css:
+  - css/extra.css
+  - css/pdf-print.css
