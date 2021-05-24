@@ -1,5 +1,7 @@
 site_name: Sal y Vinagre APPCC
 
+theme: cinder
+
 nav:
   - Home: index.md
   - Presentación:
