@@ -1,6 +1,22 @@
+# Project Information
 site_name: Sal y Vinagre APPCC
+site_url: http://salyvinagre.com/appcc
+site_author: Carlos Martín
+site_description: >-
+  Manual de Análisis de Peligros y Puntos de Control
 
-theme: cinder
+# Repository
+repo_name: appcc
+repo_url: https://github.com/inean/appcc
+edit_uri: ""
+
+# Copyright:
+copyright: Copyright &copy; 2016-2021 Carlos Martín
+
+# Configuration
+theme:
+  name: mkdocs
+  language: es
 
 nav:
   - Home: index.md
@@ -28,6 +44,14 @@ nav:
 plugins:
   - search
   - markdownextradata
+  - with-pdf:
+      cover_title: Sal y Vinagre
+      cover_subtitle: Manual de Análisis de Peligros y Puntos de Control
+      cover_logo: assets/images/salyvinage.png
+      back_cover: true
+      toc_level: 2
+      #media_type: print
+      #enabled_if_env: ENABLE_PDF_EXPORT
 
 extra:
     rs: "Carlos Alberto Martín Pérez"

@@ -8,7 +8,9 @@ authors = [
 dependencies = [
     "mkdocs~=1.1",
     "mkdocs.markdownextradata-plugin~=0.2",
-    "mkdocs-cinder~=1.2",
+    
+    "mkdocs-with-pdf~=0.8",
+    "qrcode~=6.1",
 ]
 requires-python = ">=3.9"
 dynamic = ["classifiers"]
