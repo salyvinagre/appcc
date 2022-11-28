@@ -19,6 +19,7 @@ foo@bar:~$ curl -sSL https://raw.githubusercontent.com/pdm-project/pdm/main/inst
 Una vez instalado PDM, regeneramos actualizamod los paquetes:
 
 ```console
+foo@bar:~$ pdm update --no-sync
 foo@bar:~$ pdm sync --clean
 ```
 
@@ -26,4 +27,10 @@ Y regeneramos el site:
 
 ```console
 foo@bar:~$ pdm run mkdocs build
+```
+
+Para ver el contenido local en el puerto 8000:
+
+```console
+foo@bar:~$ pdm run mkdocs serve
 ```

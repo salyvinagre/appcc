@@ -1,6 +1,6 @@
 [project]
-name = "Sal y Vinagre APPCC"
-version = "11/2022"
+name = "salyvinagre-appcc"
+version = "2022.11"
 description = "Manual de Autocontrol y Puntos Críticos"
 authors = [
     {name = "Carlos Martín", email = "inean.es@gmail.com"},
