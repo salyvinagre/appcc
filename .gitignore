@@ -1,5 +1,3 @@
 .pdm.toml
 .DS_Store
-__pypackages__
-pdm.lock
 site/
