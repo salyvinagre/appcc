@@ -291,7 +291,7 @@ summary = "Zopfli module for python"
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:6b2598c3f6bba361094c7ad299974dac0f8375f072089112b4035ca829eeb35e"
+content_hash = "sha256:a14118739c0499f5a5ae97ff6c55a94ca19afb2c1eae3b542d59ed6b35737c56"
 
 [metadata.files]
 "beautifulsoup4 4.11.1" = [
