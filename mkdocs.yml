@@ -11,7 +11,7 @@ repo_url: https://github.com/inean/appcc
 edit_uri: ""
 
 # Copyright:
-copyright: Copyright &copy; 2016-2021 Carlos Martín
+copyright: Copyright &copy; 2016-2022 Carlos Martín
 
 # Vars
 extra:
@@ -20,9 +20,10 @@ extra:
     nc: "Sal y Vinagre"
     address: "Plaza del Mercado SN, planta Alta 64-65, 37001, Salamanca"
     raal: "201977/SA"
-    actividad: "Minorista Polivalente"
+    actividad: "Minorista Polivalente / 191"
     horario: "Lunes a Sabado de 9:00 a 14:00"
     aforo: "3"
+    jcyl: "923 29 60 22"
 
 # TOC
 nav:
@@ -40,7 +41,7 @@ nav:
     - Plan de Control de Plagas: planes/plagas.md
     - Plan de Control de Proveedores: planes/proveedores.md
     - Plan de Formación: planes/formacion.md
-    - Plan de Trazabilidad: planes/trazabilidad.md
+    - Plan de Trazabilidad y la Comunicación: planes/trazabilidad.md
     - Plan de Gestión de Residuos: planes/residuos.md
   - Anexos:
     - Listado de Manipuladores: anexos/manipuladores.md

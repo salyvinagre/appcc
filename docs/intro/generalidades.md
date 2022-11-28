@@ -6,7 +6,7 @@
 * **Nombre Comercial**: {{ nc }}
 * **Dirección**: {{ address }}
 * **RAAL**:  {{ raal }}
-* **Actividad Alimentaria**: {{ actividad }}
+* **Actividad Alimentaria**: {{ actividad }}. En la atualidad no desarrolla la actividad 112/Elaboración de comidas preparadas.
 
 ## Authorización Sanitaria
 ![](../assets/png/asf-1.png)
