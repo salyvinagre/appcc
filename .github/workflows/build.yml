@@ -1,0 +1,57 @@
+name: build
+run-name: ${{ github.actor }}
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: 11 06 * * *
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11']
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python and PDM
+        uses: pdm-project/setup-pdm@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          pdm install
+
+      - name: Update requirements
+        run: |
+          pdm update --no-sync && pdm sync --clean
+
+      - name: Build docs
+        run: pdm run mkdocs build
+
+      # - name: Commit files
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add pdm.lock
+      #     git add docs/newsletter
+      #     git diff-index --quiet HEAD \
+      #       || git commit -m "chore: update dependency and publish newsletters"
+
+      # - name: Make the site
+      #   run: pdm run mkdocs build --strict
+
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: main
+
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+      #     publish_dir: ./site
