@@ -5,7 +5,12 @@ description = "Manual de Autocontrol y Puntos Críticos"
 authors = [
     {name = "Carlos Martín", email = "inean.es@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "mkdocs>=1.4.2",
+    "mkdocs.markdownextradata-plugin>=0.2.5",
+    "mkdocs-with-pdf>=0.9.3",
+    "qrcode>=7.3.1",
+]
 requires-python = ">=3.10"
 license = {text = "MIT"}
 
@@ -14,10 +19,3 @@ requires = ["pdm-pep517>=1.0.0"]
 build-backend = "pdm.pep517.api"
 
 [tool.pdm]
-[tool.pdm.dev-dependencies]
-build = [
-    "mkdocs>=1.4.2",
-    "mkdocs.markdownextradata-plugin>=0.2.5",
-    "mkdocs-with-pdf>=0.9.3",
-    "qrcode>=7.3.1",
-]
