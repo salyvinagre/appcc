@@ -21,6 +21,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Install PDF Plugin dependences
+        if: startsWith(matrix.os, 'macOS')
+        run: |
+          brew install pygobject3
+          brew install pango
+
       - name: Install dependencies
         run: |
           pdm install
