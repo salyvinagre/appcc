@@ -1,5 +1,5 @@
 # build stage
-FROM python:3.10 AS builder
+FROM python:3.11 AS builder
 
 # install PDM
 RUN pip install -U pip setuptools wheel
@@ -15,7 +15,7 @@ RUN mkdir __pypackages__ && pdm install --prod --no-lock --no-editable
 
 
 # run stage
-FROM python:3.10
+FROM python:3.11
 
 # retrieve packages from build stage
 COPY --from=builder /project/__pypackages__/3.10/ /project/opt
