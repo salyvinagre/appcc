@@ -9,7 +9,7 @@ updates:
     # Limit amount of opened PRs
     open-pull-requests-limit: 10
     target-branch: "dependencies"
-    
+
   # Check for github actions dependences
   - package-ecosystem: "github-actions"
     directory: "/"

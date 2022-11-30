@@ -2,10 +2,10 @@
 ---
 
 ## Objetivos
-Garantizar el origen y la seguridad sanitaria de las materias primas, ingredientes, materiales en contacto con los alimentos y materiales auxiliares (productos de limpieza, lubricantes, etc.), así como los servicios prestados por terceros.
+Garantizar el origen y la seguridad sanitaria de las materias primas, ingredientes, materiales en contacto con los alimentos y materiales auxiliares (productos de limpieza, lubricantes, etc.), así como los servicios prestados por terceros.
 
 ## Programas
-1. Programa de homologación de proveedores.
+1. Programa de homologación de proveedores.
 
 ## Programa de homologación de proveedores
 Requisitos exigidos al proveedor para la homologación:

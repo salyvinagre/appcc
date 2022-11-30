@@ -1,29 +1,38 @@
+---
 # Project Information
-site_name: Sal y Vinagre APPCC
-site_url: http://salyvinagre.com/appcc
-site_author: Carlos Martín
-site_description: >-
-  Manual de Análisis de Peligros y Puntos de Control
-
-# Repository
-repo_name: appcc
-repo_url: https://github.com/inean/appcc
-edit_uri: ""
+site_name: "Sal y Vinagre APPCC"
+site_author: "Carlos Martín"
+site_url: "https://salyvinagre.com/appcc"
+site_description: "Manual de Análisis de Peligros y Puntos de Control"
 
 # Copyright:
-copyright: Copyright &copy; 2016-2022 Carlos Martín
+copyright: "Copyright &copy; 2016-2022 Carlos Martín"
+
+# Repository
+repo_url: https://github.com/inean/appcc
 
 # Vars
 extra:
-    rs: "Carlos Alberto Martín Pérez"
-    nif: "09765745V"
-    nc: "Sal y Vinagre"
-    address: "Plaza del Mercado SN, planta Alta 64-65, 37001, Salamanca"
-    raal: "201977/SA"
-    actividad: "Minorista Polivalente / 191"
-    horario: "Lunes a Sabado de 9:00 a 14:00"
-    aforo: "3"
-    jcyl: "923 29 60 22"
+  # https://developers.google.com/web/fundamentals/web-app-manifest/
+  # manifest: "manifest.webmanifest"
+  social:
+    - type: "github"
+      link: https://github.com/inean"
+    - type: "twitter"
+      link: "https://twitter.com/artecoids"
+    - type: "instagram"
+      link: "salyvinagre"
+
+  # Content Vars
+  rs: "Carlos Alberto Martín Pérez"
+  nif: "09765745V"
+  nc: "Sal y Vinagre"
+  address: "Plaza del Mercado SN, planta Alta 64-65, 37001, Salamanca"
+  raal: "201977/SA"
+  actividad: "Minorista Polivalente / 191"
+  horario: "Lunes a Sabado de 9:00 a 14:00"
+  aforo: "3"
+  jcyl: "923 29 60 22"
 
 # TOC
 nav:
@@ -61,8 +70,8 @@ plugins:
       cover_logo: assets/images/salyvinage.png
       back_cover: true
       toc_level: 2
-      #media_type: print
-      #enabled_if_env: ENABLE_PDF_EXPORT
+      # media_type: print
+      # enabled_if_env: ENABLE_PDF_EXPORT
 
 
 # Configuration
@@ -71,9 +80,12 @@ theme:
   language: es
 
 markdown_extensions:
+  - admonition
   - footnotes
   - toc:
-      permalink: 
+      permalink: true
+  - nl2br
+  - sane_lists
 
 extra_css:
   - css/extra.css
