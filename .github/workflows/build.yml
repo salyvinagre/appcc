@@ -1,7 +1,7 @@
 ---
 name: Build
 run-name: ${{ github.actor }}
-on:
+on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - master
@@ -58,4 +58,4 @@ jobs:
         if: "!contains(github.ref, 'dependencies')"
         uses: ad-m/github-push-action@master
         with:
-          branch:  ${{ github.ref }}
+          branch: ${{ github.ref }}

@@ -1,4 +1,5 @@
 # Introducción
+
 ---
 
 Los mercados municipales son un servicio público, la función básica es garantizar la distribución de productos frescos y de proximidad, pero a la vez son también elementos clave en la dinamización del entorno y la integración social, que conllevan importantes beneficios económicos y públicos.

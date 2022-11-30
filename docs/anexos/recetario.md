@@ -1,10 +1,12 @@
 # Recetario
+
 ___
 
 ## Recetas
+
 1. Boquerones en Vinagre.
 
-## Boquerones en vinagre.
+## Boquerones en vinagre
 
 1. Compra de los boquerones eviscerados.
 2. Congelación a temperatura inferor a 22º durante 6 días para romper la proteina del anisakis.

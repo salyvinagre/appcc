@@ -1,3 +1,4 @@
+---
 version: 2
 updates:
   # Enable version updates for Python
@@ -16,8 +17,8 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 10
     labels:
-    - "Type: Dependencies"
-    - "Lang: Dockerfile"
+      - "Type: Dependencies"
+      - "Lang: Dockerfile"
 
   # Check for github actions dependences
   - package-ecosystem: "github-actions"
