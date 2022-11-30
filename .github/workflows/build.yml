@@ -11,52 +11,51 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: true
       matrix:
         python-version: ['3.9', '3.10', '3.11']
-        os: [ubuntu-latest, macOS-latest]
+        os: ["ubuntu-latest", "macos-latest"]
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup Python and PDM
-        uses: pdm-project/setup-pdm@v3
-        with:
-          python-version: ${{ matrix.python-version }}
-
-      - name: Install PDF Plugin dependences
-        if: startsWith(matrix.os, 'macOS')
+      - name: Install extra system dependences
+        if: startsWith(matrix.os, 'macos')
         run: |
           brew install pygobject3
           brew install pango
 
-      - name: Install dependencies
-        run: |
-          pdm install
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
+      - name: Setup PDM
+        uses: pdm-project/setup-pdm@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-pep582: true
+          cache: true
+
+      # Only update requirements when running on dependencies branch
       - name: Update requirements
-        run: |
-          pdm update --no-sync && pdm sync --clean
+        if: "!contains(github.ref, 'dependencies')"
+        run: pdm update --no-sync && pdm sync --clean
+
+      - name: Install dependencies
+        run: pdm install -v && pdm info
 
       - name: Build docs
         run: pdm run mkdocs build --strict
 
-      # - name: Commit files
-      #   run: |
-      #     git config user.name github-actions
-      #     git config user.email github-actions@github.com
-      #     git add pdm.lock
-      #     git diff-index --quiet HEAD || git commit -m "Update dependencies"
+      # Reached this point, we can commit safely pdm.lock file
+      - name: Commit files
+        if: "!contains(github.ref, 'dependencies')"
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add pdm.lock
+          git diff-index --quiet HEAD || git commit -m "Update dependencies"
 
-      # - name: Make the site
-      #   run: pdm run mkdocs build --strict
-
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: main
-
-      # - name: Deploy
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-      #     publish_dir: ./site
+      - name: Push changes
+        if: "!contains(github.ref, 'dependencies')"
+        uses: ad-m/github-push-action@master
+        with:
+          branch:  ${{ github.ref }}

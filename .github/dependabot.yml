@@ -6,9 +6,18 @@ updates:
     # Check for updates once a week
     schedule:
       interval: "weekly"
-    # Limit amount of opened PRs
     open-pull-requests-limit: 10
     target-branch: "dependencies"
+
+  # Docker
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+    - "Type: Dependencies"
+    - "Lang: Dockerfile"
 
   # Check for github actions dependences
   - package-ecosystem: "github-actions"
