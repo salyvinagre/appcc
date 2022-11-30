@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir -p build_log
           docker image ls | tee ./build_log/docker_images.txt
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: build-log-${{ matrix.target }}
           path: build_log
@@ -45,7 +45,7 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: 'trivy-results.sarif'
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: trivy-scan
           path: trivy-results.sarif
