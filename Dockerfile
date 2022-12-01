@@ -1,28 +1,39 @@
-# build stage
-FROM python:3.10 AS builder
-
+### PREPARE STAGE
+FROM python:3 AS mkdocs
+# Change to new created mkdocs user
+RUN useradd -m -d /usr/src/mkdocs -u ${user:-1001} mkdocs
+# Environment variables
+ENV PATH="${PATH}:/usr/src/mkdocs/.local/bin"
+USER mkdocs
+# Set up Build directory
+RUN mkdir -p /usr/src/mkdocs/build
+WORKDIR /usr/src/mkdocs/build
 # install PDM
-RUN pip install -U pip setuptools wheel
+RUN pip install --upgrade pip
+RUN pip install setuptools
+RUN pip install wheel
 RUN pip install pdm
+RUN pip install mkdocs
+# Entry Point to mkdocs tool
+ENTRYPOINT ["/usr/src/mkdocs/.local/bin/mkdocs"]
 
+### BUILD STAGE
+FROM mkdocs as appcc-builder
+# Environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
 # copy files
-COPY pyproject.toml pdm.lock README.md /project/
-COPY src/ /project/src
-
+USER mkdocs
+COPY docs docs
+COPY mkdocs.yml mkdocs.yml
+COPY pdm.lock pdm.lock
+COPY pyproject.toml pyproject.toml
+COPY README.md README.md
 # install dependencies and project into the local packages directory
-WORKDIR /project
-RUN mkdir __pypackages__ && pdm install --prod --no-lock --no-editable
+RUN mkdir -p __pypackages__
+RUN pdm install --prod --no-lock --no-editable
+RUN pdm run mkdocs build
 
-
-# run stage
-FROM python:3.10
-
-# retrieve packages from build stage
-COPY --from=builder /project/__pypackages__/3.10/ /project/opt
-
-EXPOSE 8000
-ENV PYTHONPATH=/project/opt/lib
-WORKDIR /project
-ENTRYPOINT ["mkdocs"]
-
-CMD ["serve", "--dev-addr=0.0.0.0:8000"]
+### RUN STAGE
+FROM nginx:latest
+# retrieve packages from build stage and move into nginx server
+COPY --from=appcc-builder /usr/src/mkdocs/build/site /usr/share/nginx/html
