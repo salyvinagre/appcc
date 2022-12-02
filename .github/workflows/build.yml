@@ -43,7 +43,7 @@ jobs:
         run: pdm install -v && pdm info
 
       - name: Build docs
-        run: pdm run mkdocs build --strict
+        run: pdm run mkdocs build
 
       # Reached this point, we can commit safely pdm.lock file
       - name: Commit files
