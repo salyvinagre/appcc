@@ -290,7 +290,7 @@ requires_python = ">=3.7"
 summary = "Zopfli module for python"
 
 [metadata]
-lock_version = "4.0"
+lock_version = "4.1"
 content_hash = "sha256:6b2598c3f6bba361094c7ad299974dac0f8375f072089112b4035ca829eeb35e"
 
 [metadata.files]
