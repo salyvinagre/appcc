@@ -206,6 +206,11 @@ requires_python = ">=3.7"
 summary = "Pure Python module to hyphenate text"
 
 [[package]]
+name = "pypng"
+version = "0.20220715.0"
+summary = "Pure Python library for saving and loading PNG images"
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
@@ -231,11 +236,13 @@ dependencies = [
 
 [[package]]
 name = "qrcode"
-version = "7.3.1"
-requires_python = ">=3.6"
+version = "7.4"
+requires_python = ">=3.7"
 summary = "QR Code image generator"
 dependencies = [
     "colorama; platform_system == \"Windows\"",
+    "pypng",
+    "typing-extensions",
 ]
 
 [[package]]
@@ -258,6 +265,12 @@ summary = "A tiny CSS parser"
 dependencies = [
     "webencodings>=0.4",
 ]
+
+[[package]]
+name = "typing-extensions"
+version = "4.4.0"
+requires_python = ">=3.7"
+summary = "Backported and Experimental Type Hints for Python 3.7+"
 
 [[package]]
 name = "watchdog"
@@ -662,6 +675,10 @@ content_hash = "sha256:6b2598c3f6bba361094c7ad299974dac0f8375f072089112b4035ca82
     {url = "https://files.pythonhosted.org/packages/6a/3d/d9e05236731f92e484607ca1522a72672ca6005de6bd6f6978f49a776e6f/pyphen-0.13.1.tar.gz", hash = "sha256:2892ada3e72b86fc4fc5172e2f1ad9e03929fab1aff0c0c77b35ab98d0fbf0fa"},
     {url = "https://files.pythonhosted.org/packages/fa/05/039025e0be53c2df648e8a72767021e8bdf708b4093e936a7f606a89be7b/pyphen-0.13.1-py3-none-any.whl", hash = "sha256:03960a96a9141e5268064a476f2feb63fb556924b7119156c4d37a2c847ae277"},
 ]
+"pypng 0.20220715.0" = [
+    {url = "https://files.pythonhosted.org/packages/3e/b9/3766cc361d93edb2ce81e2e1f87dd98f314d7d513877a342d31b30741680/pypng-0.20220715.0-py3-none-any.whl", hash = "sha256:4a43e969b8f5aaafb2a415536c1a8ec7e341cd6a3f957fd5b5f32a4cfeed902c"},
+    {url = "https://files.pythonhosted.org/packages/93/cd/112f092ec27cca83e0516de0a3368dbd9128c187fb6b52aaaa7cde39c96d/pypng-0.20220715.0.tar.gz", hash = "sha256:739c433ba96f078315de54c0db975aee537cbc3e1d0ae4ed9aab0ca1e427e2c1"},
+]
 "python-dateutil 2.8.2" = [
     {url = "https://files.pythonhosted.org/packages/36/7a/87837f39d0296e723bb9b62bbb257d0355c7f6128853c78955f57342a56d/python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
     {url = "https://files.pythonhosted.org/packages/4c/c4/13b4776ea2d76c115c1d1b84579f3764ee6d57204f6be27119f13a61d0a9/python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
@@ -712,8 +729,9 @@ content_hash = "sha256:6b2598c3f6bba361094c7ad299974dac0f8375f072089112b4035ca82
     {url = "https://files.pythonhosted.org/packages/5a/66/bbb1dd374f5c870f59c5bb1db0e18cbe7fa739415a24cbd95b2d1f5ae0c4/pyyaml_env_tag-0.1-py3-none-any.whl", hash = "sha256:af31106dec8a4d68c60207c1886031cbf839b68aa7abccdb19868200532c2069"},
     {url = "https://files.pythonhosted.org/packages/fb/8e/da1c6c58f751b70f8ceb1eb25bc25d524e8f14fe16edcce3f4e3ba08629c/pyyaml_env_tag-0.1.tar.gz", hash = "sha256:70092675bda14fdec33b31ba77e7543de9ddc88f2e5b99160396572d11525bdb"},
 ]
-"qrcode 7.3.1" = [
-    {url = "https://files.pythonhosted.org/packages/94/9f/31f33cdf3cf8f98e64c42582fb82f39ca718264df61957f28b0bbb09b134/qrcode-7.3.1.tar.gz", hash = "sha256:375a6ff240ca9bd41adc070428b5dfc1dcfbb0f2507f1ac848f6cded38956578"},
+"qrcode 7.4" = [
+    {url = "https://files.pythonhosted.org/packages/d2/ed/25b79f182b7f6de6a3bbbf9f09f8213d35238ff27c05895be36ab184e42a/qrcode-7.4-py3-none-any.whl", hash = "sha256:7ff613c4ef2d56a0dddbc54d8d1b6dce8060794ed7d1737356a83e2bdf49bbe9"},
+    {url = "https://files.pythonhosted.org/packages/f4/94/6d4e8113d17add55e17d7c20e2271c5fd77b9fcb9a7048c7d93167002e31/qrcode-7.4.tar.gz", hash = "sha256:c775424e983c9eba814da1febdfcf853165ecc01e494077591e370c8d4802bd5"},
 ]
 "six 1.16.0" = [
     {url = "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
@@ -726,6 +744,10 @@ content_hash = "sha256:6b2598c3f6bba361094c7ad299974dac0f8375f072089112b4035ca82
 "tinycss2 1.2.1" = [
     {url = "https://files.pythonhosted.org/packages/75/be/24179dfaa1d742c9365cbd0e3f0edc5d3aa3abad415a2327c5a6ff8ca077/tinycss2-1.2.1.tar.gz", hash = "sha256:8cff3a8f066c2ec677c06dbc7b45619804a6938478d9d73c284b29d14ecb0627"},
     {url = "https://files.pythonhosted.org/packages/da/99/fd23634d6962c2791fb8cb6ccae1f05dcbfc39bce36bba8b1c9a8d92eae8/tinycss2-1.2.1-py3-none-any.whl", hash = "sha256:2b80a96d41e7c3914b8cda8bc7f705a4d9c49275616e886103dd839dfc847847"},
+]
+"typing-extensions 4.4.0" = [
+    {url = "https://files.pythonhosted.org/packages/0b/8e/f1a0a5a76cfef77e1eb6004cb49e5f8d72634da638420b9ea492ce8305e8/typing_extensions-4.4.0-py3-none-any.whl", hash = "sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"},
+    {url = "https://files.pythonhosted.org/packages/e3/a7/8f4e456ef0adac43f452efc2d0e4b242ab831297f1bac60ac815d37eb9cf/typing_extensions-4.4.0.tar.gz", hash = "sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa"},
 ]
 "watchdog 2.1.9" = [
     {url = "https://files.pythonhosted.org/packages/19/6c/c28d25371653ea4cb13f7a7d578ca30828eebeab845aacb2dfae8f8be147/watchdog-2.1.9-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:195fc70c6e41237362ba720e9aaf394f8178bfc7fa68207f112d108edef1af33"},
