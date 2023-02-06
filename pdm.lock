@@ -236,7 +236,7 @@ dependencies = [
 
 [[package]]
 name = "qrcode"
-version = "7.4.1"
+version = "7.4.2"
 requires_python = ">=3.7"
 summary = "QR Code image generator"
 dependencies = [
@@ -729,9 +729,9 @@ content_hash = "sha256:6b2598c3f6bba361094c7ad299974dac0f8375f072089112b4035ca82
     {url = "https://files.pythonhosted.org/packages/5a/66/bbb1dd374f5c870f59c5bb1db0e18cbe7fa739415a24cbd95b2d1f5ae0c4/pyyaml_env_tag-0.1-py3-none-any.whl", hash = "sha256:af31106dec8a4d68c60207c1886031cbf839b68aa7abccdb19868200532c2069"},
     {url = "https://files.pythonhosted.org/packages/fb/8e/da1c6c58f751b70f8ceb1eb25bc25d524e8f14fe16edcce3f4e3ba08629c/pyyaml_env_tag-0.1.tar.gz", hash = "sha256:70092675bda14fdec33b31ba77e7543de9ddc88f2e5b99160396572d11525bdb"},
 ]
-"qrcode 7.4.1" = [
-    {url = "https://files.pythonhosted.org/packages/e4/87/8bc329c0bb7217f68fcae5bf1c70f9406b0820e16af59188394d4c0407f0/qrcode-7.4.1-py3-none-any.whl", hash = "sha256:ba7520e031f28dadcd92049a88832a585111d09342bd0d15ddae5ccf5af98c12"},
-    {url = "https://files.pythonhosted.org/packages/f1/c9/15cd4e3097813a60ecf0fe643af6233008055ae5869a66e53abcb71cb03c/qrcode-7.4.1.tar.gz", hash = "sha256:26185f4c48ea8a896d5c9a0b080c41b75448e30b533b418ea0c65d91d10f0901"},
+"qrcode 7.4.2" = [
+    {url = "https://files.pythonhosted.org/packages/24/79/aaf0c1c7214f2632badb2771d770b1500d3d7cbdf2590ae62e721ec50584/qrcode-7.4.2-py3-none-any.whl", hash = "sha256:581dca7a029bcb2deef5d01068e39093e80ef00b4a61098a2182eac59d01643a"},
+    {url = "https://files.pythonhosted.org/packages/30/35/ad6d4c5a547fe9a5baf85a9edbafff93fc6394b014fab30595877305fa59/qrcode-7.4.2.tar.gz", hash = "sha256:9dd969454827e127dbd93696b20747239e6d540e082937c90f14ac95b30f5845"},
 ]
 "six 1.16.0" = [
     {url = "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
