@@ -19,19 +19,11 @@ la seguridad alimentaria.
 
 * [Real Decreto 1808/1991, de 13 de diciembre](), por el que se regulan las menciones o marcas que permiten identificar el lote al que pertenece un producto alimenticio.
 
-* [Decreto 131/1994](http://www.boe.es/diario_boe/txt.php?id=BOE-A-2011-4293), por el que se regulan las autorizaciones sanitarias de funcionamiento de las industrias, establecimientos y actividades alimentarias (BOCyL 15-06-1994).
-
 * [Real Decreto 2002/1995]() por el que se modifica la lista positiva de aditivos colorantes autorizados para su uso en la elaoración de productos alimenticios así como sys condiciones de utilización aprovada en **RD 2001/1995**.
-
-* [Real Decreto 2207/1995 de 28 de diciembre](), por el que se establecen las normas de higiene de los productos alimenticios.
 
 * [Real Decreto 1334/1999, de 31 de julio](), por el que se aprueba la norma general de etiquetado, presentación y publicidad de los productos alimenticios.
 
-* [Real Decreto 269/2000, de 14 de diciembre](), por el que se regulan los planes de formación sobre higiene de los alimentos en industrias y establecimientos alimentarios.
-
 * [Real Decreto 994/2000, de 2 de junio](), por el que se modifica la lista positiva de aditivos distintos de colorantes y edulcorantes para su uso en la elaboración de productos alimenticios, así como sus condiciones de utilización aprovada en **RD 145/1997**.
-
-* [Real Decreto 640/2006, de 26 de mayo](), por que se regulan determinadas condiciones de aplicación de las disposiciones comunitarias en materia de higiene, de la producción y comercialización de los productos alimenticios.
 
 * [Ley 10/2010 de 27 de septiembre](http://www.boe.es/buscar/doc.php?id=BOE-A-2010-17980), de Salud Pública y Seguridad Alimentaria de Castilla y León.
 
