@@ -1,39 +1,72 @@
-### PREPARE STAGE
-FROM python:3 AS mkdocs
-# Change to new created mkdocs user
-RUN useradd -m -d /usr/src/mkdocs -u ${user:-1001} mkdocs
-# Environment variables
-ENV PATH="${PATH}:/usr/src/mkdocs/.local/bin"
-USER mkdocs
-# Set up Build directory
-RUN mkdir -p /usr/src/mkdocs/build
-WORKDIR /usr/src/mkdocs/build
-# install PDM
-RUN pip install --upgrade pip
-RUN pip install setuptools
-RUN pip install wheel
-RUN pip install pdm
-RUN pip install mkdocs
-# Entry Point to mkdocs tool
-ENTRYPOINT ["/usr/src/mkdocs/.local/bin/mkdocs"]
+# Global args
+ARG PYTHON_VERSION=3.10
+ARG MKDOCS=appcc
 
-### BUILD STAGE
-FROM mkdocs as appcc-builder
-# Environment variables
-ENV PYTHONDONTWRITEBYTECODE=1
-# copy files
-USER mkdocs
-COPY docs docs
-COPY mkdocs.yml mkdocs.yml
-COPY pdm.lock pdm.lock
-COPY pyproject.toml pyproject.toml
-COPY README.md README.md
-# install dependencies and project into the local packages directory
-RUN mkdir -p __pypackages__
-RUN pdm install --prod --no-lock --no-editable
-RUN pdm run mkdocs build
+# Builder stage
+FROM ghcr.io/astral-sh/uv:python${PYTHON_VERSION}-bookworm-slim AS builder
 
-### RUN STAGE
-FROM nginx:latest
-# retrieve packages from build stage and move into nginx server
-COPY --from=appcc-builder /usr/src/mkdocs/build/site /usr/share/nginx/html
+# Re-declare the ARG to use it in this stage
+ARG DOCS_PATH
+
+# hadolint ignore=DL3008
+RUN <<EOF
+    apt-get update
+    apt-get install --no-install-recommends -y git build-essential
+EOF
+
+# Set uv environment variables
+ENV UV_COMPILE_BYTECODE=1
+ENV UV_LINK_MODE=copy
+
+WORKDIR /
+# Install the application dependencies and build .venv:
+# for rootless configurations like podman, add 'z' or relabel=shared
+# to circumvent the SELinux context
+#
+# See https://github.com/hadolint/language-docker/issues/95 for hadolint support
+RUN --mount=type=cache,target=/root/.cache/uv                           \
+    --mount=type=bind,source=uv.lock,target=uv.lock,ro                  \
+    --mount=type=bind,source=pyproject.toml,target=pyproject.toml,ro    \
+    --mount=type=bind,source=docs/appcc/mkdocs.yml,target=mkdocs.yml,ro \
+    --mount=type=bind,source=docs/appcc/src,target=/src,ro              \
+    uv run --all-extras --frozen mkdocs build
+
+# Copy generated html files to the /site directory
+COPY docs/appcc/site .
+
+# Use an official Nginx runtime as a parent image
+FROM nginx:alpine
+
+# Defalt environment variables
+ENV NGINX_PORT=8080
+ENV NGINX_HOST=localhost
+ENV NGINX_ROOT=
+
+# Create Nginx configuration template
+RUN <<EOS
+
+    mkdir -p /etc/nginx/templates
+    cat > /etc/nginx/templates/default.conf.template << 'EOF'
+
+server {
+    listen ${NGINX_PORT};
+    server_name ${NGINX_HOST};
+
+    location ${NGINX_ROOT}/metrics {
+        stub_status on;
+    }
+    location ${NGINX_ROOT}/ {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+        try_files $uri $uri/ =404;
+    }
+    error_page   500 502 503 504  ${NGINX_ROOT}/50x.html;
+    location = ${NGINX_ROOT}/50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+EOF
+EOS
+
+# Copy the built site from the builder stage
+COPY --from=builder /site /usr/share/nginx/html

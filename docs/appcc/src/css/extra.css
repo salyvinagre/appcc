@@ -1,0 +1,8 @@
+/* Hide .col-md-3 when it has no child elements */
+.col-md-3:empty {
+    display: none;
+}
+/* Fix class name typo */
+.fa-gihub:before {
+    content: "\f09b"
+}

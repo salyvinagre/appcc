@@ -1,21 +1,25 @@
 [project]
 name = "salyvinagre-appcc"
-version = "2022.11"
-description = "Manual de Autocontrol y Puntos Críticos"
-authors = [
-    {name = "Carlos Martín", email = "inean.es@gmail.com"},
-]
-dependencies = [
-    "mkdocs>=1.4.2",
-    "mkdocs.markdownextradata-plugin>=0.2.5",
-    "mkdocs-with-pdf>=0.9.3",
-    "qrcode>=7.3.1",
-]
+description = """
+Manual de Autocontrol y Puntos Críticos
+"""
+authors = [{ name = "Carlos Martín", email = "inean.es@gmail.com" }]
+version = "2024.09"
+dependencies = []
 requires-python = ">=3.10"
-license = {text = "MIT"}
 
-[build-system]
-requires = ["pdm-pep517>=1.0.0"]
-build-backend = "pdm.pep517.api"
+[project.urls]
+Changelog = "https://github.com/salyvinagre/appcc/docs/ChangeLog.md"
+Homepage = "https://github.com/salyvinage/appcc"
+Source = "https://github.com/salyvinagre/appcc"
 
-[tool.pdm]
+[tool.uv]
+dev-dependencies = [
+  "mkdocs>=1.4.2",
+  "mkdocs.markdownextradata-plugin>=0.2.5",
+  "mkdocs-with-pdf>=0.9.3",
+  "mkdocs-cluster",
+  "qrcode>=7.3.1",
+  "pre-commit>=3.7.1",
+]
+package = false
