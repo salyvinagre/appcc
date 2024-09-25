@@ -65,14 +65,10 @@ jobs:
             NGINX_PORT=8080
             NGINX_HOST=test
 
-      - name: Wait for web server to be ready
-        uses: jakejarvis/wait-action@v1
-        with:
-          timeout: 10
-          url: http://localhost:8080
-
       - name: Test web server is running
+        shell: bash
         run: |
+          sleep 10s
           test "$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8080)" = "200" || exit 1
 
       - name: Clean up Docker container
