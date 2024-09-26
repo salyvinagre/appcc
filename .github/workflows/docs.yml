@@ -54,5 +54,5 @@ jobs:
       - name: "Install the project"
         run: uv sync --frozen --all-extras --dev
 
-      - run: uv run coverage combine
-      - run: uv run coverage xml
+      - run: uv run mkdocs build -f docs/appcc/mkdocs.yml --clean
+
