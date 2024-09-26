@@ -35,8 +35,8 @@ RUN --mount=type=cache,target=/root/.cache/uv                           \
 FROM nginx:alpine
 
 # Defalt environment variables
-ENV NGINX_PORT=8080
 ENV NGINX_HOST=localhost
+ENV NGINX_PORT=80
 ENV NGINX_ROOT=
 
 # Create Nginx configuration template
