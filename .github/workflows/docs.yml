@@ -55,4 +55,3 @@ jobs:
         run: uv sync --frozen --all-extras --dev
 
       - run: uv run mkdocs build -f docs/appcc/mkdocs.yml --clean
-
