@@ -1,0 +1,53 @@
+{
+    // Rust image is needed for pre-commit hooks
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    // Extra features
+    "features": {
+        "./features/uv:1": { },
+        "./features/taplo:1": { },
+        "ghcr.io/dhoeric/features/hadolint:1": { }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "exiasr.hadolint",
+                "tamasfe.even-better-toml",
+                "shardulm94.trailing-spaces",
+                "usernamehw.errorlens",
+                "yzhang.markdown-all-in-one"
+                // Project related extensions
+            ],
+            "settings": {
+                // Editor settings
+                "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+                // Terminal settings
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.profiles.linux": {
+                    "zsh": {
+                        "path": "/bin/zsh"
+                    }
+                }
+            }
+        }
+    },
+
+    // Forward traefik dashboard port
+    "forwardPorts": [ 8000 ],
+    "portsAttributes": {
+        "8000": {
+            "label": "MkDocs Server",
+            "onAutoForward": "notify"
+        }
+    },
+
+    // Update container
+    "postCreateCommand": [ "uv", "sync", "--dev", "--all-extras" ],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postStartCommand": [ "uv", "run", "pre-commit", "install" ],
+    // Run vscode-server as non-root user
+    "containerUser": "vscode"
+
+    // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    //"remoteUser": "root"
+}
