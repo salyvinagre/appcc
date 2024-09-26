@@ -29,10 +29,7 @@ RUN --mount=type=cache,target=/root/.cache/uv                           \
     --mount=type=bind,source=pyproject.toml,target=pyproject.toml,ro    \
     --mount=type=bind,source=docs/appcc/mkdocs.yml,target=mkdocs.yml,ro \
     --mount=type=bind,source=docs/appcc/src,target=/src,ro              \
-    echo"build doc at $(date)" && uv run --all-extras --frozen mkdocs build
-
-# Copy generated html files to the /site directory
-COPY docs/appcc/site .
+    uv run --frozen mkdocs build
 
 # Use an official Nginx runtime as a parent image
 FROM nginx:alpine
