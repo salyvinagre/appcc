@@ -46,14 +46,14 @@ jobs:
             PYTHON_VERSION=${{ steps.python.outputs.version }}
           outputs: type=docker,dest=${{ github.workspace }}/image.tar
 
+      - name: Test Image
+        run:  docker run --rm ${{ env.TEST_TAG }}
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: myimage
           path: ${{github.workspace}}/image.tar
-
-      - name: Test Image
-        run:  docker run --rm ${{ github.repository }}
 
   test:
     runs-on: ubuntu-latest
