@@ -64,14 +64,11 @@ jobs:
       - name: Load image
         run:  docker load --input ${{github.workspace}}/image.tar
 
-      - uses: addnab/docker-run-action@v3
+      - name: Run Test Image
+        run:  docker run -d --name -p 8080:80 test ${{ env.TEST_TAG }}
+
+      - name: Check the deployed service URL
+        uses: jtalk/url-health-check-action@v4
         with:
-          image: ${{ env.TEST_TAG }}
-          options: "-d -p 8080:80"
-          run: |
-            sleep 10s
-            STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:8080")
-            if [ "$STATUS_CODE" -ne 200 ]; then
-              echo "Web page is not accessible. Status code: $STATUS_CODE"
-              exit 1
-            fi
+          url: http://localhost:8080
+          max-attempts: 3
