@@ -20,6 +20,11 @@ jobs:
         with:
           python-version-file: ".python-version"
 
+      - name: "Setup taplo"
+        uses: uncenter/setup-taplo@v1
+        with:
+          version: "0.9.3"
+
       - name: "Pre-commit"
         run: uv run pre-commit run --show-diff-on-failure --color=always --all-files
         env:
