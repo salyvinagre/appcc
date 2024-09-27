@@ -37,17 +37,13 @@ jobs:
       - name: Build Image
         uses: docker/build-push-action@v6
         with:
-          load: true
           tags: ${{ env.TEST_TAG }}
-          cache-from: type=registry,ref=${{ env.TEST_TAG }}
-          cache-to: type=inline
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           build-args: |
             REPOSITORY=${{ github.repository }}
             PYTHON_VERSION=${{ steps.python.outputs.version }}
-          #outputs: type=docker,dest=${{ github.workspace }}/image.tar
-
-      - name: Test Image
-        run:  docker run --rm ${{ env.TEST_TAG }}
+          outputs: type=docker,dest=${{ github.workspace }}/image.tar
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -71,7 +67,7 @@ jobs:
       - uses: addnab/docker-run-action@v3
         with:
           image: ${{ env.TEST_TAG }}
-          options: "-p 8080:80"
+          options: "-d -p 8080:80"
           run: |
             sleep 10s
             STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:8080")
