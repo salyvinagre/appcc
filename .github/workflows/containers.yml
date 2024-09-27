@@ -44,7 +44,7 @@ jobs:
           build-args: |
             REPOSITORY=${{ github.repository }}
             PYTHON_VERSION=${{ steps.python.outputs.version }}
-          outputs: type=docker,dest=${{ github.workspace }}/image.tar
+          #outputs: type=docker,dest=${{ github.workspace }}/image.tar
 
       - name: Test Image
         run:  docker run --rm ${{ env.TEST_TAG }}

@@ -38,6 +38,10 @@ RUN --mount=type=cache,target=/root/.cache/uv                                   
 # Use an official Nginx runtime as a parent image
 FROM nginx:alpine
 
+# Re-declare the ARG to use it in this stage
+ARG REGISTRY
+ARG REPOSITORY
+
 # Set labels for the image
 LABEL url="https://github.com/${REPOSITORY}/"
 LABEL image="${REGISTRY}/${REPOSITORY}"
