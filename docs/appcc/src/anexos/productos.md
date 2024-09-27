@@ -2,9 +2,9 @@
 
 ______________________________________________________________________
 
-| Nombre Comercial   | Tipo          | Usos                     | Observaciones |
-| ------------------ | ------------- | ------------------------ | ------------ |
-| Lejia Común        | Desinfectante | Multisuperficies         |              |
-| Gel Hidroalcohólico | gel           | Lavado de manos clientes |              |
-| Fairy              | Detergente    | Multisuperficies         |              |
-| Sanitol (Spray)    | Desinfectante | Báscula, datáfono        |              |
+| Nombre Comercial    | Tipo          | Usos                     | Observaciones |
+| ------------------- | ------------- | ------------------------ | ------------- |
+| Lejia Común         | Desinfectante | Multisuperficies         |               |
+| Gel Hidroalcohólico | gel           | Lavado de manos clientes |               |
+| Fairy               | Detergente    | Multisuperficies         |               |
+| Sanitol (Spray)     | Desinfectante | Báscula, datáfono        |               |

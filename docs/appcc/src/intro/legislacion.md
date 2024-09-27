@@ -7,7 +7,7 @@ ______________________________________________________________________
 ## Marco normativo Europeo
 
 - [Reglamemto (CE) 178/2002, de 28 de enero](<>), por el que se establecen los principios y los requisitos generales de la legislación alimentaria, se crea la Autoridad Europea de Seguridad Alimentaria y se fijan procedimientos relativos a
-  la seguridad alimentaria.
+    la seguridad alimentaria.
 
 - [Reglamento (CE) 852/2004, de 29 de abril](<>), relativo a la higiene de los productos alimenticios.
 

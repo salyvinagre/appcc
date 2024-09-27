@@ -1,0 +1,16 @@
+{
+    "id": "uv",
+    "version": "1.0.0",
+    "name": "UV Installer",
+    "description": "Installs UV in the dev container.",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Select or enter a act version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

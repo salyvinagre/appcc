@@ -7,8 +7,12 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  TEST_TAG: ${{ github.repository }}:test
+  LATEST_TAG: ${{ github.repository }}:test
+
 jobs:
-  lint-container:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,64 +23,53 @@ jobs:
         with:
           dockerfile: Dockerfile
 
-  container:
+  build:
     runs-on: ubuntu-latest
-
-    needs: lint-container
-    if: ${{ success() }}
 
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-buildx-action@v3
 
-      - name: Get version
+      - name: Get Python Version
         id: python
         run: echo "version=$(cat .python-version)" >> "$GITHUB_OUTPUT"
 
-      - name: Cache Docker layers
-        uses: actions/cache@v3
-        with:
-          path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-buildx-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-buildx-
-
-      - name: Build
+      - name: Build Image
         uses: docker/build-push-action@v6
         with:
-          context: .
-          load: true
-          file: ./Dockerfile
-          tags: ${{ github.repository }}:latest
-          cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache
+          tags: ${{ env.TEST_TAG }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           build-args: |
             REPOSITORY=${{ github.repository }}
             PYTHON_VERSION=${{ steps.python.outputs.version }}
+          outputs: type=docker,dest=${{ github.workspace }}/image.tar
 
-      - name: Run Image
-        id: run_image
-        uses: addnab/docker-run-action@v3
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: test
-          image: ${{ github.repository }}:latest
-          options: -d -p 8080:8080
-          env: |
-            NGINX_PORT=8080
-            NGINX_HOST=test
+          name: image
+          path: ${{github.workspace}}/image.tar
 
-      - name: Wait for web server to be ready
-        uses: jakejarvis/wait-action@v1
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Download image
+        uses: actions/download-artifact@v4
         with:
-          timeout: 10
+          name: image
+
+      - name: Load image
+        run:  docker load --input ${{github.workspace}}/image.tar
+
+      - name: Run Test Image
+        run:  docker run -d --name test-container -p 8080:80 ${{ env.TEST_TAG }}
+
+      - name: Check the deployed service URL
+        uses: jtalk/url-health-check-action@v4
+        with:
           url: http://localhost:8080
-
-      - name: Test web server is running
-        run: |
-          test "$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8080)" = "200" || exit 1
-
-      - name: Clean up Docker container
-        if: always() && steps.run_image.outcome == 'success'
-        run: |
-          docker stop test
-          docker rm test
+          max-attempts: "3"
+          retry-delay: "10s"

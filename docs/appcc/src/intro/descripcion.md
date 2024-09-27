@@ -24,7 +24,7 @@ Zona destinada al almacenamiento de materias primas y la elaboración de product
 Zona destinada a la venta del producto al consumidor final. Los principales elementos a destacar en el plano de planta  son los siguientes:
 
 - Vitrinas expositoras regrigeradas. (1 y 2)
-  - La vitrina **1** esta orientada a la venta de encurtidos y pescados escabechados a una temperatura de conservación de 6º.
-  - La vitrina **2** se dedica a la venta de bacalao salado con una temperatura de conservación de 2º.
+    - La vitrina **1** esta orientada a la venta de encurtidos y pescados escabechados a una temperatura de conservación de 6º.
+    - La vitrina **2** se dedica a la venta de bacalao salado con una temperatura de conservación de 2º.
 - Lavabo de manos con grifo automático electromecanico (*alpha*)
 - Sumidero de Rejilla (*Beta*).

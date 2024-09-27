@@ -1,6 +1,10 @@
 # Global args
 ARG PYTHON_VERSION=3.10
-ARG MKDOCS=appcc
+ARG DOCS_PATH=appcc
+
+# Registry and repository args
+ARG REGISTRY="ghcr.io"
+ARG REPOSITORY="salyvinagre/appcc"
 
 # Builder stage
 FROM ghcr.io/astral-sh/uv:python${PYTHON_VERSION}-bookworm-slim AS builder
@@ -24,22 +28,28 @@ WORKDIR /
 # to circumvent the SELinux context
 #
 # See https://github.com/hadolint/language-docker/issues/95 for hadolint support
-RUN --mount=type=cache,target=/root/.cache/uv                           \
-    --mount=type=bind,source=uv.lock,target=uv.lock,ro                  \
-    --mount=type=bind,source=pyproject.toml,target=pyproject.toml,ro    \
-    --mount=type=bind,source=docs/appcc/mkdocs.yml,target=mkdocs.yml,ro \
-    --mount=type=bind,source=docs/appcc/src,target=/src,ro              \
-    uv run --all-extras --frozen mkdocs build
-
-# Copy generated html files to the /site directory
-COPY docs/appcc/site .
+RUN --mount=type=cache,target=/root/.cache/uv                                   \
+    --mount=type=bind,source=uv.lock,target=uv.lock,ro                          \
+    --mount=type=bind,source=pyproject.toml,target=pyproject.toml,ro            \
+    --mount=type=bind,source=docs/${DOCS_PATH}/mkdocs.yml,target=mkdocs.yml,ro  \
+    --mount=type=bind,source=docs/${DOCS_PATH}/src,target=/src,ro               \
+    uv run --frozen mkdocs build
 
 # Use an official Nginx runtime as a parent image
 FROM nginx:alpine
 
+# Re-declare the ARG to use it in this stage
+ARG REGISTRY
+ARG REPOSITORY
+
+# Set labels for the image
+LABEL url="https://github.com/${REPOSITORY}/"
+LABEL image="${REGISTRY}/${REPOSITORY}"
+LABEL maintainer="Carlos Martín (github.com/inean)"
+
 # Defalt environment variables
-ENV NGINX_PORT=8080
 ENV NGINX_HOST=localhost
+ENV NGINX_PORT=80
 ENV NGINX_ROOT=
 
 # Create Nginx configuration template

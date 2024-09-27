@@ -1,25 +1,31 @@
+[build-system]
+  requires = [
+    "hatchling",
+  ]
+  build-backend = "hatchling.build"
+
 [project]
-name = "salyvinagre-appcc"
-description = """
-Manual de Autocontrol y Puntos Críticos
-"""
-authors = [{ name = "Carlos Martín", email = "inean.es@gmail.com" }]
-version = "2024.09"
-dependencies = []
-requires-python = ">=3.10"
+  name = "salyvinagre-appcc"
+  description = "Manual de Autocontrol y Puntos Críticos"
+  authors = [
+    { name = "Carlos Martín", email = "inean.es@gmail.com" },
+  ]
+  version = "2024.09"
+  dependencies = [
+    "mkdocs-cluster",
+    "mkdocs.markdownextradata-plugin>=0.2.5",
+    "mkdocs>=1.4.2",
+    "qrcode>=7.3.1",
+  ]
+  requires-python = ">=3.10"
 
 [project.urls]
-Changelog = "https://github.com/salyvinagre/appcc/docs/ChangeLog.md"
-Homepage = "https://github.com/salyvinage/appcc"
-Source = "https://github.com/salyvinagre/appcc"
+  Homepage  = "https://github.com/salyvinage/appcc"
+  Source    = "https://github.com/salyvinagre/appcc"
+  Changelog = "https://github.com/salyvinagre/appcc/docs/ChangeLog.md"
 
 [tool.uv]
-dev-dependencies = [
-  "mkdocs>=1.4.2",
-  "mkdocs.markdownextradata-plugin>=0.2.5",
-  "mkdocs-with-pdf>=0.9.3",
-  "mkdocs-cluster",
-  "qrcode>=7.3.1",
-  "pre-commit>=3.7.1",
-]
-package = false
+  dev-dependencies = [
+    "pre-commit>=3.7.1",
+  ]
+  package = false
