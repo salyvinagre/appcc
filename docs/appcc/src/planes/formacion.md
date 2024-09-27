@@ -42,24 +42,24 @@ Según recoge el Reglamento (UE) N°1169/2011 del Parlamento Europeo y del Conse
 Sustancias o productos que causan alegias o intolerancias:
 
 1. Cereales que contengan **gluten**, a saber: trigo, centeno, cebada, avena, espelta, kamut o sus variedades híbridas y productos derivados, salvo:
-   - jarabes de glucosa a base de trigo, incluida la dextrosa;
-   - maltodextrinas a base de trigo;
-   - jarabes de glucosa a base de cebada;
-   - cereales utilizados para hacer destilados alcohólicos, incluido e! alcohol etílico de origen agrícola.
+    - jarabes de glucosa a base de trigo, incluida la dextrosa;
+    - maltodextrinas a base de trigo;
+    - jarabes de glucosa a base de cebada;
+    - cereales utilizados para hacer destilados alcohólicos, incluido e! alcohol etílico de origen agrícola.
 1. **Crustáceos** y productos a base de crustáceos.
 1. **Huevos** y productos a base de huevo.
 1. **Pescado** y productos a base de pescado, salvo:
-   - gelatina de pescado utilizada como soporte de vitaminas o preparados de carotenoides;
-   - gelatina de pescado o ictiocola utilizada como clarificante en la cerveza y el vino.
+    - gelatina de pescado utilizada como soporte de vitaminas o preparados de carotenoides;
+    - gelatina de pescado o ictiocola utilizada como clarificante en la cerveza y el vino.
 1. Cacahuetes y productos a base de cacahuetes.
 1. **Soja** y productos a base de soja, salvo:
-   - aceite y grasa de semilla de soja totalmente refinados;
-   - tocoferoles naturales mezclados (E306), d-aifa tocoferol natural, acetato de d- aifa tocoferol natural y succinato de d-aifa tocoferol natural derivados de la soja;
-   - fitosteroles y ésteres de fitosterol derivados de aceites vegetales de soja;
-   - ésteres de fitostanol derivados de fitosteroles de aceite de semilla de soja.
+    - aceite y grasa de semilla de soja totalmente refinados;
+    - tocoferoles naturales mezclados (E306), d-aifa tocoferol natural, acetato de d- aifa tocoferol natural y succinato de d-aifa tocoferol natural derivados de la soja;
+    - fitosteroles y ésteres de fitosterol derivados de aceites vegetales de soja;
+    - ésteres de fitostanol derivados de fitosteroles de aceite de semilla de soja.
 1. _Leche_ y sus derivados (incluida la lactosa), salvo:
-   - lactosuero utilizado para hacer destilados alcohólicos, incluido el alcohol etílico de origen agrícola;
-   - lactitoL
+    - lactosuero utilizado para hacer destilados alcohólicos, incluido el alcohol etílico de origen agrícola;
+    - lactitoL
 1. **Frutos de cáscara**, es decir: almendras (Amygdalus communis L.), avellanas (Corylus avellana), nueces (Juglans regia), anacardos (Anacardium occidentale), pacanas \[Carya illinoensis (Wangenh.) K. Koch\], nueces de Brasil (Bertholletia excelsa), alfóncigos (Pistada vera), nueces macadamia o nueces de Australia (Macadamia ternifolia) y productos derivados, salvo los frutos de cáscara utilizados para hacer destilados alcohólicos, incluido el alcohol etílico de origen agrícola.
 1. **Apio** y productos derivados.
 1. **Mostaza** y productos derivados.
@@ -71,11 +71,11 @@ Sustancias o productos que causan alegias o intolerancias:
 #### Grupos de productos pontencialmente implicados en las alergias alimentarias
 
 1. Cereales:
-   - Aceitunas rellenas de anchoa.
-   - Pimentón siempre que no sea puro.
+    - Aceitunas rellenas de anchoa.
+    - Pimentón siempre que no sea puro.
 1. Aceitunas:
-   - Existe la posibilidad de usar consevantes como el acido láctico Especial atención a los siguientes aditivos: E-270, E-32{5..9}
+    - Existe la posibilidad de usar consevantes como el acido láctico Especial atención a los siguientes aditivos: E-270, E-32{5..9}
 1. Pescado:
-   - Aceitunas rellenas de anchoa.
+    - Aceitunas rellenas de anchoa.
 1. Sulfitos:
-   - Aceitunas en general. Especial atención al bacalao salao pues algunos fabricantes hacen uso de sulfitos con el mismo E-22{0..8}.
+    - Aceitunas en general. Especial atención al bacalao salao pues algunos fabricantes hacen uso de sulfitos con el mismo E-22{0..8}.

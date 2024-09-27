@@ -37,7 +37,6 @@ repos:
           - mdformat-mkdocs
           - mdformat-tables
           - mdformat-frontmatter
-          - mdformat-simple-breaks
           - mdformat-admon
           - mdformat-wikilink
 
