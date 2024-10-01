@@ -36,7 +36,7 @@ RUN --mount=type=cache,target=/root/.cache/uv                                   
     uv run --frozen mkdocs build
 
 # Use an official Nginx runtime as a parent image
-FROM nginxinc/nginx-unprivileged:latest
+FROM nginxinc/nginx-unprivileged:alpine
 
 # Re-declare the ARG to use it in this stage
 ARG REGISTRY
