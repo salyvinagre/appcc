@@ -36,7 +36,7 @@ RUN --mount=type=cache,target=/root/.cache/uv                                   
     uv run --frozen mkdocs build
 
 # Use an official Nginx runtime as a parent image
-FROM nginx:alpine
+FROM nginxinc/nginx-unprivileged:latest
 
 # Re-declare the ARG to use it in this stage
 ARG REGISTRY
@@ -49,8 +49,11 @@ LABEL maintainer="Carlos Martín (github.com/inean)"
 
 # Defalt environment variables
 ENV NGINX_HOST=localhost
-ENV NGINX_PORT=80
+ENV NGINX_PORT=8080
 ENV NGINX_ROOT=
+
+# Change to non privileged user
+USER nginx
 
 # Create Nginx configuration template
 RUN <<EOS
